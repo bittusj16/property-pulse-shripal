@@ -10,7 +10,7 @@ import {
 } from "react-share";
 
 const ShareButtons = ({ property }) => {
-  const shareUrl = `${process.env.NEXT_PUBLIC_DOMAIN}/properties/${property._id}`;
+  const shareUrl = `${process.env.NEXT_PUBLIC_DOMAIN_VERCEL_URL}/properties/${property._id}`;
 
   return (
     <>

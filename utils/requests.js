@@ -1,4 +1,4 @@
-const apidomain = process.env.NEXT_PUBLIC_DOMAIN_VERCEL_URL || null;
+const apidomain = process.env.NEXT_PUBLIC_API_DOMAIN_VERCEL_URL || null;
 
 //Fetch all property
 async function fetchProperties() {

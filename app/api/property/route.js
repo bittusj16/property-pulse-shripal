@@ -98,7 +98,7 @@ export const POST = async (request) => {
     console.log("newProperty", newProperty);
 
     return Response.redirect(
-      `${process.env.NEXTAUTH_URL}/property/${newProperty._id}`
+      `${process.env.NEXTAUTH_URL_VERCEL_URL}/property/${newProperty._id}`
     );
   } catch (err) {
     // console.log("error", err);
