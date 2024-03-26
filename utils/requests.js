@@ -8,9 +8,13 @@ async function fetchProperties() {
       return [];
     }
 
+    console.log("======================>apidomain", apidomain);
+
     const res = await fetch(`${apidomain}/property`, {
       cache: "no-store",
     });
+    console.log("res=====================>", res);
+
     if (!res.ok) {
       throw new Error("Failed to fetch data");
     }
