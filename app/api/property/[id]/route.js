@@ -5,6 +5,8 @@ import { getSessionUser } from "@/utils/getSessionuser";
 // Get property by id...
 // GET /api/property/:id
 
+export const dynamic = "force-dynamic";
+
 export const GET = async (request, { params }) => {
   try {
     await connectDB();

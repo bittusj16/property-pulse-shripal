@@ -3,6 +3,8 @@ import Property from "@/model/Property";
 import { getSessionUser } from "@/utils/getSessionuser";
 import { UploadImage } from "@/utils/uploadImage";
 
+export const dynamic = "force-dynamic";
+
 // Get all properties...
 export const GET = async (request) => {
   try {
